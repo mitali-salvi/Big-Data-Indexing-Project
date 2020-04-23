@@ -1,0 +1,1546 @@
+2020-04-10 00:01:13.620  INFO 22180 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Member consumer-1-6768ef58-2eda-4892-8498-4eb156534bd2 sending LeaveGroup request to coordinator 10.0.0.98:9092 (id: 2147483647 rack: null)
+2020-04-10 00:01:13.631  INFO 22180 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-1, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+2020-04-10 00:01:13.631  INFO 22180 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-04-10 00:01:13.650  INFO 22180 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : group_id: Consumer stopped
+2020-04-10 00:01:13.659  INFO 22180 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-10 00:01:13.662  INFO 22180 --- [SpringContextShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2020-04-10 00:01:58.171  INFO 22604 --- [main] com.csye7255.project.ProjectApplication  : Starting ProjectApplication on Mitalis-MacBook-Air.local with PID 22604 (/Users/mitalisalvi/Downloads/BDI/Final/project/target/classes started by mitalisalvi in /Users/mitalisalvi/Downloads/BDI/Final/project)
+2020-04-10 00:01:58.182  INFO 22604 --- [main] com.csye7255.project.ProjectApplication  : No active profile set, falling back to default profiles: default
+2020-04-10 00:02:00.906  INFO 22604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-10 00:02:00.923  INFO 22604 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-10 00:02:00.923  INFO 22604 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-10 00:02:01.070  INFO 22604 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-10 00:02:01.070  INFO 22604 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2745 ms
+2020-04-10 00:02:01.496  INFO 22604 --- [main] c.c.project.config.ElasticSearchConfig   : Creating RestHighLevel client: 
+2020-04-10 00:02:02.980  INFO 22604 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-10 00:02:03.429  INFO 22604 --- [main] c.c.project.config.ElasticSearchConfig   : Creating RestHighLevel client: 
+2020-04-10 00:02:03.636  INFO 22604 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2020-04-10 00:02:03.747  INFO 22604 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-04-10 00:02:03.755  INFO 22604 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-04-10 00:02:03.756  INFO 22604 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1586491323744
+2020-04-10 00:02:04.086  INFO 22604 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-04-10 00:02:04.133  INFO 22604 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-04-10 00:02:04.133  INFO 22604 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-04-10 00:02:04.133  INFO 22604 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1586491324133
+2020-04-10 00:02:04.135  INFO 22604 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-1, groupId=group_id] Subscribed to topic(s): kafkatopic
+2020-04-10 00:02:04.137  INFO 22604 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-04-10 00:02:04.172  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-1, groupId=group_id] Cluster ID: kLiN4XzQROSmyeF4oyfF6g
+2020-04-10 00:02:04.178  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Discovered group coordinator 10.0.0.98:9092 (id: 2147483647 rack: null)
+2020-04-10 00:02:04.183  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Revoking previously assigned partitions []
+2020-04-10 00:02:04.184  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: []
+2020-04-10 00:02:04.185  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 00:02:04.195  INFO 22604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-10 00:02:04.198  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 00:02:04.201  INFO 22604 --- [main] com.csye7255.project.ProjectApplication  : Started ProjectApplication in 7.002 seconds (JVM running for 7.647)
+2020-04-10 00:02:04.216  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Successfully joined group with generation 3
+2020-04-10 00:02:04.222  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting newly assigned partitions: kafkatopic-0, kafkatopic-1
+2020-04-10 00:02:04.233  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting offset for partition kafkatopic-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=10.0.0.98:9092 (id: 0 rack: null), epoch=0}}
+2020-04-10 00:02:04.235  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting offset for partition kafkatopic-1 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=10.0.0.98:9092 (id: 0 rack: null), epoch=0}}
+2020-04-10 00:02:04.242  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkatopic-0, kafkatopic-1]
+2020-04-10 00:02:13.546  INFO 22604 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-10 00:02:13.549  INFO 22604 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-10 00:02:13.589  INFO 22604 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 40 ms
+2020-04-10 00:02:13.677  INFO 22604 --- [http-nio-8080-exec-2] c.c.project.controller.PlanController    : PATCH mapping
+2020-04-10 00:02:13.722  INFO 22604 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:02:13.722  INFO 22604 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:02:13.722  INFO 22604 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:02:13.756  INFO 22604 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 00:17:07"}
+2020-04-10 00:02:13.843  INFO 22604 --- [http-nio-8080-exec-2] c.c.project.controller.PlanController    : PUT - Publishing data to Kafka: 
+2020-04-10 00:02:13.844  INFO 22604 --- [http-nio-8080-exec-2] c.c.project.controller.PlanController    : Plan patched successfully
+2020-04-10 00:05:07.519  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Member consumer-1-7266f0b5-5175-468a-8e86-f46504b286e7 sending LeaveGroup request to coordinator 10.0.0.98:9092 (id: 2147483647 rack: null)
+2020-04-10 00:05:07.522  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-1, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+2020-04-10 00:05:07.523  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-04-10 00:05:07.532  INFO 22604 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : group_id: Consumer stopped
+2020-04-10 00:05:07.536  INFO 22604 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-10 00:05:59.180  INFO 22642 --- [main] com.csye7255.project.ProjectApplication  : Starting ProjectApplication on Mitalis-MacBook-Air.local with PID 22642 (/Users/mitalisalvi/Downloads/BDI/Final/project/target/classes started by mitalisalvi in /Users/mitalisalvi/Downloads/BDI/Final/project)
+2020-04-10 00:05:59.187  INFO 22642 --- [main] com.csye7255.project.ProjectApplication  : No active profile set, falling back to default profiles: default
+2020-04-10 00:06:01.782  INFO 22642 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-10 00:06:01.801  INFO 22642 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-10 00:06:01.802  INFO 22642 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-10 00:06:01.965  INFO 22642 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-10 00:06:01.965  INFO 22642 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2608 ms
+2020-04-10 00:06:02.361  INFO 22642 --- [main] c.c.project.config.ElasticSearchConfig   : Creating RestHighLevel client: 
+2020-04-10 00:06:03.830  INFO 22642 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-10 00:06:04.290  INFO 22642 --- [main] c.c.project.config.ElasticSearchConfig   : Creating RestHighLevel client: 
+2020-04-10 00:06:04.500  INFO 22642 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2020-04-10 00:06:04.619  INFO 22642 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-04-10 00:06:04.628  INFO 22642 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-04-10 00:06:04.628  INFO 22642 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1586491564613
+2020-04-10 00:06:04.943  INFO 22642 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-04-10 00:06:04.992  INFO 22642 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-04-10 00:06:04.993  INFO 22642 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-04-10 00:06:04.993  INFO 22642 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1586491564992
+2020-04-10 00:06:04.995  INFO 22642 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-1, groupId=group_id] Subscribed to topic(s): kafkatopic
+2020-04-10 00:06:04.997  INFO 22642 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-04-10 00:06:05.032  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-1, groupId=group_id] Cluster ID: kLiN4XzQROSmyeF4oyfF6g
+2020-04-10 00:06:05.035  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Discovered group coordinator 10.0.0.98:9092 (id: 2147483647 rack: null)
+2020-04-10 00:06:05.039  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Revoking previously assigned partitions []
+2020-04-10 00:06:05.041  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: []
+2020-04-10 00:06:05.041  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 00:06:05.056  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 00:06:05.063  INFO 22642 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-10 00:06:05.069  INFO 22642 --- [main] com.csye7255.project.ProjectApplication  : Started ProjectApplication in 7.03 seconds (JVM running for 7.657)
+2020-04-10 00:06:05.074  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Successfully joined group with generation 5
+2020-04-10 00:06:05.080  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting newly assigned partitions: kafkatopic-0, kafkatopic-1
+2020-04-10 00:06:05.093  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting offset for partition kafkatopic-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=10.0.0.98:9092 (id: 0 rack: null), epoch=0}}
+2020-04-10 00:06:05.095  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting offset for partition kafkatopic-1 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=10.0.0.98:9092 (id: 0 rack: null), epoch=0}}
+2020-04-10 00:06:05.108  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkatopic-0, kafkatopic-1]
+2020-04-10 00:06:20.156  INFO 22642 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-10 00:06:20.159  INFO 22642 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-10 00:06:20.192  INFO 22642 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
+2020-04-10 00:06:20.268  INFO 22642 --- [http-nio-8080-exec-2] c.c.project.controller.PlanController    : POST mapping
+2020-04-10 00:06:20.269  INFO 22642 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:06:20.269  INFO 22642 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:06:20.269  INFO 22642 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:06:20.305  INFO 22642 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 00:17:07"}
+2020-04-10 00:06:20.311  INFO 22642 --- [http-nio-8080-exec-2] c.csye7255.project.service.PlanService   : Create plan:{}
+2020-04-10 00:06:20.311  INFO 22642 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:06:20.311  INFO 22642 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:06:20.312  INFO 22642 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:06:20.312  INFO 22642 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 00:17:07"}
+2020-04-10 00:06:20.319  INFO 22642 --- [http-nio-8080-exec-2] c.csye7255.project.service.PlanService   : Validate JSON
+2020-04-10 00:06:20.434  INFO 22642 --- [http-nio-8080-exec-2] c.c.project.controller.PlanController    : Etag: 2184e6c9-5839-47df-81a5-53c111f7ad60
+2020-04-10 00:06:20.435  INFO 22642 --- [http-nio-8080-exec-2] c.c.project.controller.PlanController    : POST - Publishing to KAFKA
+2020-04-10 00:06:20.451  INFO 22642 --- [http-nio-8080-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2020-04-10 00:06:20.498  INFO 22642 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-04-10 00:06:20.499  INFO 22642 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-04-10 00:06:20.499  INFO 22642 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1586491580498
+2020-04-10 00:06:20.509  INFO 22642 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: kLiN4XzQROSmyeF4oyfF6g
+2020-04-10 00:06:20.529  INFO 22642 --- [http-nio-8080-exec-2] c.c.project.controller.PlanController    : Data saved successfully
+2020-04-10 00:06:20.561  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Consumed Message Key: post
+2020-04-10 00:06:20.562  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Consumed Message Value: {
+
+	"planCostShares": {
+		"deductible": 2000,
+		"_org": "example.com",
+		"copay": 23,
+		"objectId": "1234vxc2324sdf-1",
+		"objectType": "membercostshare"
+		
+	},
+	"linkedPlanServices": [{
+		"linkedService": {
+			"_org": "example.com",
+			"objectId": "1234520xvc30asdf-4",
+			"objectType": "service",
+			"name": "Yearly physical"
+		},
+		"planserviceCostShares": {
+			"deductible": 10,
+			"_org": "example.com",
+			"copay": 0,
+			"objectId": "1234512xvc1314asdfs-2",
+			"objectType": "membercostshare"
+		},
+		"_org": "example.com",
+		"objectId": "27283xvx9asdff-7",
+		"objectType": "planservice"
+	}, {
+		"linkedService": {
+			"_org": "example.com",
+			"objectId": "1234520xvc30sfs-5",
+			"objectType": "service",
+			"name": "well baby"
+		},
+		"planserviceCostShares": {
+			"deductible": 10,
+			"_org": "example.com",
+			"copay": 175,
+			"objectId": "1234512xvc1314sdfsd-3",
+			"objectType": "membercostshare"
+		},
+		
+		"_org": "example.com",
+		
+		"objectId": "27283xvx9sdf-6",
+		"objectType": "planservice"
+	}],
+
+
+	"_org": "example.com",
+	"objectId": "mitali",
+	"objectType": "plan",
+	"planType": "inNetworkType",
+	"creationDate": "12-12-2017"
+}
+2020-04-10 00:06:20.562  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Saving data in ES
+2020-04-10 00:06:20.563  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Validating JSONschema
+2020-04-10 00:06:20.591  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.p.repo.ElasticSearchRepository       : Indexing document in ES:plan_mitali
+2020-04-10 00:06:34.919  INFO 22642 --- [http-nio-8080-exec-3] c.c.project.controller.PlanController    : PATCH mapping
+2020-04-10 00:06:34.931  INFO 22642 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:06:34.932  INFO 22642 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:06:34.932  INFO 22642 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:06:34.933  INFO 22642 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 00:17:07"}
+2020-04-10 00:06:34.934 ERROR 22642 --- [http-nio-8080-exec-3] c.c.project.controller.PlanController    : Forbidden
+2020-04-10 00:06:45.032  INFO 22642 --- [http-nio-8080-exec-4] c.c.project.controller.PlanController    : PATCH mapping
+2020-04-10 00:06:45.037  INFO 22642 --- [http-nio-8080-exec-4] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:06:45.038  INFO 22642 --- [http-nio-8080-exec-4] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:06:45.038  INFO 22642 --- [http-nio-8080-exec-4] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:06:45.039  INFO 22642 --- [http-nio-8080-exec-4] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 00:17:07"}
+2020-04-10 00:06:45.051 ERROR 22642 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:06:45.051 ERROR 22642 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:06:45.055 ERROR 22642 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:06:45.056 ERROR 22642 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:06:45.060 ERROR 22642 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:06:45.061 ERROR 22642 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:06:45.065 ERROR 22642 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:06:45.067 ERROR 22642 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:06:45.071 ERROR 22642 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: JSONObject["linkedPlanServices"] not a string.
+2020-04-10 00:06:45.072  INFO 22642 --- [http-nio-8080-exec-4] c.c.project.controller.PlanController    : PUT - Publishing data to Kafka: 
+2020-04-10 00:06:45.073  INFO 22642 --- [http-nio-8080-exec-4] c.c.project.controller.PlanController    : Plan patched successfully
+2020-04-10 00:07:08.673  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Member consumer-1-5613742b-2ab7-4a04-b276-7397b645ae44 sending LeaveGroup request to coordinator 10.0.0.98:9092 (id: 2147483647 rack: null)
+2020-04-10 00:07:08.676  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-1, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+2020-04-10 00:07:08.677  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-04-10 00:07:08.690  INFO 22642 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : group_id: Consumer stopped
+2020-04-10 00:07:08.695  INFO 22642 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-10 00:07:08.697  INFO 22642 --- [SpringContextShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2020-04-10 00:08:36.530  INFO 22977 --- [main] com.csye7255.project.ProjectApplication  : Starting ProjectApplication on Mitalis-MacBook-Air.local with PID 22977 (/Users/mitalisalvi/Downloads/BDI/Final/project/target/classes started by mitalisalvi in /Users/mitalisalvi/Downloads/BDI/Final/project)
+2020-04-10 00:08:36.537  INFO 22977 --- [main] com.csye7255.project.ProjectApplication  : No active profile set, falling back to default profiles: default
+2020-04-10 00:08:40.159  INFO 22977 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-10 00:08:40.177  INFO 22977 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-10 00:08:40.177  INFO 22977 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-10 00:08:40.354  INFO 22977 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-10 00:08:40.354  INFO 22977 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3597 ms
+2020-04-10 00:08:40.919  INFO 22977 --- [main] c.c.project.config.ElasticSearchConfig   : Creating RestHighLevel client: 
+2020-04-10 00:08:42.865  INFO 22977 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-10 00:08:43.503  INFO 22977 --- [main] c.c.project.config.ElasticSearchConfig   : Creating RestHighLevel client: 
+2020-04-10 00:08:43.741  INFO 22977 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2020-04-10 00:08:43.867  INFO 22977 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-04-10 00:08:43.876  INFO 22977 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-04-10 00:08:43.876  INFO 22977 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1586491723864
+2020-04-10 00:08:44.425  INFO 22977 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-04-10 00:08:44.499  INFO 22977 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-04-10 00:08:44.500  INFO 22977 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-04-10 00:08:44.500  INFO 22977 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1586491724499
+2020-04-10 00:08:44.503  INFO 22977 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-1, groupId=group_id] Subscribed to topic(s): kafkatopic
+2020-04-10 00:08:44.508  INFO 22977 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-04-10 00:08:44.568  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-1, groupId=group_id] Cluster ID: kLiN4XzQROSmyeF4oyfF6g
+2020-04-10 00:08:44.587  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Discovered group coordinator 10.0.0.98:9092 (id: 2147483647 rack: null)
+2020-04-10 00:08:44.584  INFO 22977 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-10 00:08:44.593  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Revoking previously assigned partitions []
+2020-04-10 00:08:44.594  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: []
+2020-04-10 00:08:44.596  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 00:08:44.599  INFO 22977 --- [main] com.csye7255.project.ProjectApplication  : Started ProjectApplication in 9.156 seconds (JVM running for 9.787)
+2020-04-10 00:08:44.611  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 00:08:44.625  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Successfully joined group with generation 1
+2020-04-10 00:08:44.630  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting newly assigned partitions: kafkatopic-0, kafkatopic-1
+2020-04-10 00:08:44.641  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Found no committed offset for partition kafkatopic-0
+2020-04-10 00:08:44.642  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Found no committed offset for partition kafkatopic-1
+2020-04-10 00:08:44.673  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-1, groupId=group_id] Resetting offset for partition kafkatopic-0 to offset 0.
+2020-04-10 00:08:44.675  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-1, groupId=group_id] Resetting offset for partition kafkatopic-1 to offset 0.
+2020-04-10 00:08:44.689  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkatopic-0, kafkatopic-1]
+2020-04-10 00:09:05.184  INFO 22977 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-10 00:09:05.184  INFO 22977 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-10 00:09:05.217  INFO 22977 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
+2020-04-10 00:09:05.286  INFO 22977 --- [http-nio-8080-exec-2] c.c.project.controller.PlanController    : POST mapping
+2020-04-10 00:09:05.287  INFO 22977 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:09:05.287  INFO 22977 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:09:05.287  INFO 22977 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:09:05.329  INFO 22977 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 00:17:07"}
+2020-04-10 00:09:05.336  INFO 22977 --- [http-nio-8080-exec-2] c.csye7255.project.service.PlanService   : Create plan:{}
+2020-04-10 00:09:05.336  INFO 22977 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:09:05.336  INFO 22977 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:09:05.336  INFO 22977 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:09:05.337  INFO 22977 --- [http-nio-8080-exec-2] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 00:17:07"}
+2020-04-10 00:09:05.350  INFO 22977 --- [http-nio-8080-exec-2] c.csye7255.project.service.PlanService   : Validate JSON
+2020-04-10 00:09:05.469  INFO 22977 --- [http-nio-8080-exec-2] c.c.project.controller.PlanController    : Etag: 03502ea8-26bc-4cd3-be29-146076055384
+2020-04-10 00:09:05.469  INFO 22977 --- [http-nio-8080-exec-2] c.c.project.controller.PlanController    : POST - Publishing to KAFKA
+2020-04-10 00:09:05.478  INFO 22977 --- [http-nio-8080-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2020-04-10 00:09:05.520  INFO 22977 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-04-10 00:09:05.522  INFO 22977 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-04-10 00:09:05.525  INFO 22977 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1586491745520
+2020-04-10 00:09:05.536  INFO 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: kLiN4XzQROSmyeF4oyfF6g
+2020-04-10 00:09:05.562  INFO 22977 --- [http-nio-8080-exec-2] c.c.project.controller.PlanController    : Data saved successfully
+2020-04-10 00:09:05.608  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Consumed Message Key: post
+2020-04-10 00:09:05.609  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Consumed Message Value: {
+
+	"planCostShares": {
+		"deductible": 2000,
+		"_org": "example.com",
+		"copay": 23,
+		"objectId": "1234vxc2324sdf-1",
+		"objectType": "membercostshare"
+		
+	},
+	"linkedPlanServices": [{
+		"linkedService": {
+			"_org": "example.com",
+			"objectId": "1234520xvc30asdf-4",
+			"objectType": "service",
+			"name": "Yearly physical"
+		},
+		"planserviceCostShares": {
+			"deductible": 10,
+			"_org": "example.com",
+			"copay": 0,
+			"objectId": "1234512xvc1314asdfs-2",
+			"objectType": "membercostshare"
+		},
+		"_org": "example.com",
+		"objectId": "27283xvx9asdff-7",
+		"objectType": "planservice"
+	}, {
+		"linkedService": {
+			"_org": "example.com",
+			"objectId": "1234520xvc30sfs-5",
+			"objectType": "service",
+			"name": "well baby"
+		},
+		"planserviceCostShares": {
+			"deductible": 10,
+			"_org": "example.com",
+			"copay": 175,
+			"objectId": "1234512xvc1314sdfsd-3",
+			"objectType": "membercostshare"
+		},
+		
+		"_org": "example.com",
+		
+		"objectId": "27283xvx9sdf-6",
+		"objectType": "planservice"
+	}],
+
+
+	"_org": "example.com",
+	"objectId": "mitali",
+	"objectType": "plan",
+	"planType": "inNetworkType",
+	"creationDate": "12-12-2017"
+}
+2020-04-10 00:09:05.609  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Saving data in ES
+2020-04-10 00:09:05.612  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Validating JSONschema
+2020-04-10 00:09:05.648  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.p.repo.ElasticSearchRepository       : Indexing document in ES:plan_mitali
+2020-04-10 00:09:26.071  INFO 22977 --- [http-nio-8080-exec-3] c.c.project.controller.PlanController    : PATCH mapping
+2020-04-10 00:09:26.086  INFO 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:09:26.089  INFO 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:09:26.100  INFO 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:09:26.101  INFO 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 00:17:07"}
+2020-04-10 00:09:26.120 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.120 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.123 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.124 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.132 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.133 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.136 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.138 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.149 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: JSONObject["linkedPlanServices"] not a string.
+2020-04-10 00:09:26.151  INFO 22977 --- [http-nio-8080-exec-3] c.c.project.controller.PlanController    : PUT - Publishing data to Kafka: 
+2020-04-10 00:09:26.152 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.152 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.156 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.156 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.164 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.166 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.171 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.172 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:26.175 ERROR 22977 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Exeception while reading data: JSONObject["linkedPlanServices"] not a string.
+2020-04-10 00:09:26.182  INFO 22977 --- [http-nio-8080-exec-3] c.c.project.controller.PlanController    : Plan patched successfully
+2020-04-10 00:09:26.189  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Consumed Message Key: patch
+2020-04-10 00:09:26.189  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Consumed Message Value: {"planCostShares":{"deductible":2000,"_org":"example.com","copay":23,"objectId":"1234vxc2324sdf-1","objectType":"membercostshare"},"linkedPlanServices":[{"linkedService":{"name":"Yearly physical","_org":"example.com","objectId":"1234520xvc30asdf-508efg","objectType":"service"},"planserviceCostShares":{"deductible":10,"_org":"example.com","copay":0,"objectId":"1234512xvc1314asdfs-503jfk","objectType":"membercostshare"},"_org":"example.com","objectId":"27283xvx9asdff-50445612","objectType":"planservice"},{"linkedService":{"name":"Yearly physical","_org":"example.com","objectId":"1234520xvc30asdf-4","objectType":"service"},"planserviceCostShares":{"deductible":10,"_org":"example.com","copay":0,"objectId":"1234512xvc1314asdfs-2","objectType":"membercostshare"},"_org":"example.com","objectId":"27283xvx9asdff-7","objectType":"planservice"},{"linkedService":{"name":"well baby","_org":"example.com","objectId":"1234520xvc30sfs-5","objectType":"service"},"planserviceCostShares":{"deductible":10,"_org":"example.com","copay":175,"objectId":"1234512xvc1314sdfsd-3","objectType":"membercostshare"},"_org":"example.com","objectId":"27283xvx9sdf-6","objectType":"planservice"}],"planType":"inNetworkType","_org":"example.com","creationDate":"12-12-2017","objectId":"mitali","objectType":"plan"}
+2020-04-10 00:09:26.190  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Patching data in ES
+2020-04-10 00:09:26.191  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.p.repo.ElasticSearchRepository       : Indexing document in ES:plan_mitali
+2020-04-10 00:09:47.320  INFO 22977 --- [http-nio-8080-exec-4] c.c.project.controller.PlanController    : GET mapping
+2020-04-10 00:09:47.322  INFO 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:09:47.323  INFO 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:09:47.323  INFO 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:09:47.324  INFO 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 00:17:07"}
+2020-04-10 00:09:47.326  INFO 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Get Plan
+2020-04-10 00:09:47.327  INFO 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:09:47.327  INFO 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:09:47.327  INFO 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:09:47.327  INFO 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 00:17:07"}
+2020-04-10 00:09:47.330 ERROR 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:47.331 ERROR 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:47.338 ERROR 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:47.339 ERROR 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:47.342 ERROR 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:47.343 ERROR 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:47.346 ERROR 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:47.347 ERROR 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:09:47.351 ERROR 22977 --- [http-nio-8080-exec-4] c.csye7255.project.service.PlanService   : Exeception while reading data: JSONObject["linkedPlanServices"] not a string.
+2020-04-10 00:09:47.364  INFO 22977 --- [http-nio-8080-exec-4] c.c.project.controller.PlanController    : Got data from Redis
+2020-04-10 00:11:00.852  INFO 22977 --- [http-nio-8080-exec-7] c.c.project.controller.PlanController    : PUT mapping
+2020-04-10 00:11:00.855  INFO 22977 --- [http-nio-8080-exec-7] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:11:00.855  INFO 22977 --- [http-nio-8080-exec-7] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKSD+WuDxbQ7MEoRQhNX02dn6fIH91OwTQE9jss7ajNwk=
+2020-04-10 00:11:00.855  INFO 22977 --- [http-nio-8080-exec-7] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKSD+WuDxbQ7MEoRQhNX02dn6fIH91OwTQE9jss7ajNwk=
+2020-04-10 00:11:00.856  INFO 22977 --- [http-nio-8080-exec-7] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/08 22:44:49"}
+2020-04-10 00:11:00.857  INFO 22977 --- [http-nio-8080-exec-7] c.csye7255.project.service.TokenService  : The Token Validity has expired
+2020-04-10 00:11:00.857 ERROR 22977 --- [http-nio-8080-exec-7] c.c.project.controller.PlanController    : BadRequest
+2020-04-10 00:11:04.928  INFO 22977 --- [http-nio-8080-exec-8] c.c.project.controller.TokenController   : GET token
+2020-04-10 00:11:04.934  INFO 22977 --- [http-nio-8080-exec-8] c.c.project.controller.TokenController   : Token values is {"organization":"example.com","user":"user","ttl":"2020/04/10 01:11:04"}
+2020-04-10 00:11:04.936  INFO 22977 --- [http-nio-8080-exec-8] c.c.project.controller.TokenController   : TTL is : 2020/04/10 01:11:04
+2020-04-10 00:11:17.453  INFO 22977 --- [http-nio-8080-exec-10] c.c.project.controller.PlanController    : PUT mapping
+2020-04-10 00:11:17.453  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:11:17.453  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKzq1yGwMRo7TmI/c2w4BHzB++eY8IOVAP0MSQvZJ2YvI=
+2020-04-10 00:11:17.453  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKzq1yGwMRo7TmI/c2w4BHzB++eY8IOVAP0MSQvZJ2YvI=
+2020-04-10 00:11:17.454  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 01:11:04"}
+2020-04-10 00:11:17.455  INFO 22977 --- [http-nio-8080-exec-10] c.c.project.controller.PlanController    : Etag: f6bee194-e73b-46c8-8e81-434410843b83
+2020-04-10 00:11:17.455  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Update plan
+2020-04-10 00:11:17.456  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:11:17.456  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKzq1yGwMRo7TmI/c2w4BHzB++eY8IOVAP0MSQvZJ2YvI=
+2020-04-10 00:11:17.456  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKzq1yGwMRo7TmI/c2w4BHzB++eY8IOVAP0MSQvZJ2YvI=
+2020-04-10 00:11:17.457  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 01:11:04"}
+2020-04-10 00:11:17.466  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Deleting data:{"planCostShares":"membercostshare_1234vxc2324sdf-1","linkedPlanServices":"[\"planservice_27283xvx9asdff-50445612\",\"planservice_27283xvx9asdff-7\",\"planservice_27283xvx9sdf-6\"]","planType":"inNetworkType","_org":"example.com","creationDate":"12-12-2017","objectId":"mitali","objectType":"plan"}
+2020-04-10 00:11:17.467  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Id: mitali
+2020-04-10 00:11:17.467  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Type: plan
+2020-04-10 00:11:17.471  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : {"deductible":2000,"_org":"example.com","copay":23,"objectId":"1234vxc2324sdf-1","objectType":"membercostshare"}
+2020-04-10 00:11:17.472  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Deleting data:{"deductible":2000,"_org":"example.com","copay":23,"objectId":"1234vxc2324sdf-1","objectType":"membercostshare"}
+2020-04-10 00:11:17.473  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Id: 1234vxc2324sdf-1
+2020-04-10 00:11:17.473  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Type: membercostshare
+2020-04-10 00:11:17.478  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Deleting data:{"linkedService":"service_1234520xvc30asdf-508efg","planserviceCostShares":"membercostshare_1234512xvc1314asdfs-503jfk","_org":"example.com","objectId":"27283xvx9asdff-50445612","objectType":"planservice"}
+2020-04-10 00:11:17.478  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Id: 27283xvx9asdff-50445612
+2020-04-10 00:11:17.478  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Type: planservice
+2020-04-10 00:11:17.480  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : {"name":"Yearly physical","_org":"example.com","objectId":"1234520xvc30asdf-508efg","objectType":"service"}
+2020-04-10 00:11:17.482  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Deleting data:{"name":"Yearly physical","_org":"example.com","objectId":"1234520xvc30asdf-508efg","objectType":"service"}
+2020-04-10 00:11:17.482  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Id: 1234520xvc30asdf-508efg
+2020-04-10 00:11:17.482  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Type: service
+2020-04-10 00:11:17.484  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : {"deductible":10,"_org":"example.com","copay":0,"objectId":"1234512xvc1314asdfs-503jfk","objectType":"membercostshare"}
+2020-04-10 00:11:17.484  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Deleting data:{"deductible":10,"_org":"example.com","copay":0,"objectId":"1234512xvc1314asdfs-503jfk","objectType":"membercostshare"}
+2020-04-10 00:11:17.484  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Id: 1234512xvc1314asdfs-503jfk
+2020-04-10 00:11:17.484  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Type: membercostshare
+2020-04-10 00:11:17.486  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Deleting data:{"linkedService":"service_1234520xvc30asdf-4","planserviceCostShares":"membercostshare_1234512xvc1314asdfs-2","_org":"example.com","objectId":"27283xvx9asdff-7","objectType":"planservice"}
+2020-04-10 00:11:17.486  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Id: 27283xvx9asdff-7
+2020-04-10 00:11:17.486  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Type: planservice
+2020-04-10 00:11:17.487  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : {"name":"Yearly physical","_org":"example.com","objectId":"1234520xvc30asdf-4","objectType":"service"}
+2020-04-10 00:11:17.488  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Deleting data:{"name":"Yearly physical","_org":"example.com","objectId":"1234520xvc30asdf-4","objectType":"service"}
+2020-04-10 00:11:17.488  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Id: 1234520xvc30asdf-4
+2020-04-10 00:11:17.488  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Type: service
+2020-04-10 00:11:17.489  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : {"deductible":10,"_org":"example.com","copay":0,"objectId":"1234512xvc1314asdfs-2","objectType":"membercostshare"}
+2020-04-10 00:11:17.490  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Deleting data:{"deductible":10,"_org":"example.com","copay":0,"objectId":"1234512xvc1314asdfs-2","objectType":"membercostshare"}
+2020-04-10 00:11:17.490  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Id: 1234512xvc1314asdfs-2
+2020-04-10 00:11:17.490  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Type: membercostshare
+2020-04-10 00:11:17.496  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Deleting data:{"linkedService":"service_1234520xvc30sfs-5","planserviceCostShares":"membercostshare_1234512xvc1314sdfsd-3","_org":"example.com","objectId":"27283xvx9sdf-6","objectType":"planservice"}
+2020-04-10 00:11:17.497  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Id: 27283xvx9sdf-6
+2020-04-10 00:11:17.497  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Type: planservice
+2020-04-10 00:11:17.499  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : {"name":"well baby","_org":"example.com","objectId":"1234520xvc30sfs-5","objectType":"service"}
+2020-04-10 00:11:17.500  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Deleting data:{"name":"well baby","_org":"example.com","objectId":"1234520xvc30sfs-5","objectType":"service"}
+2020-04-10 00:11:17.500  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Id: 1234520xvc30sfs-5
+2020-04-10 00:11:17.500  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Type: service
+2020-04-10 00:11:17.501  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : {"deductible":10,"_org":"example.com","copay":175,"objectId":"1234512xvc1314sdfsd-3","objectType":"membercostshare"}
+2020-04-10 00:11:17.502  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Deleting data:{"deductible":10,"_org":"example.com","copay":175,"objectId":"1234512xvc1314sdfsd-3","objectType":"membercostshare"}
+2020-04-10 00:11:17.502  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Id: 1234512xvc1314sdfsd-3
+2020-04-10 00:11:17.502  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Type: membercostshare
+2020-04-10 00:11:17.505  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Create plan:{membercostshare_1234512xvc1314sdfsd-3=23b0026a-bb9c-4b9d-813e-37b6b442d110, membercostshare_1234512xvc1314asdfs-2=36b1853b-13c6-485f-b4ec-fa4755facdac, service_1234520xvc30asdf-4=babd3d74-ffc6-4453-8e8d-e69695294589, service_1234520xvc30sfs-5=ab15341d-f37b-4fab-8b52-c02f13882825, service_1234520xvc30asdf-508efg=9142be0f-f8f3-4140-8591-f9f4e4f0f623, planservice_27283xvx9asdff-7=bb93d140-ca8c-4302-9a66-ac6e7339df87, membercostshare_1234512xvc1314asdfs-503jfk=3b1c1bd8-2deb-4ab4-9947-3df33260445e, planservice_27283xvx9asdff-50445612=87dcd8cd-3038-496b-93e2-02c784a7fc7b, membercostshare_1234vxc2324sdf-1=93ea0794-e063-48af-b195-ae427486b951, planservice_27283xvx9sdf-6=5942507e-77a2-4ac4-89ef-32c9aca26933}
+2020-04-10 00:11:17.505  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:11:17.505  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKzq1yGwMRo7TmI/c2w4BHzB++eY8IOVAP0MSQvZJ2YvI=
+2020-04-10 00:11:17.505  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKzq1yGwMRo7TmI/c2w4BHzB++eY8IOVAP0MSQvZJ2YvI=
+2020-04-10 00:11:17.506  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 01:11:04"}
+2020-04-10 00:11:17.507  INFO 22977 --- [http-nio-8080-exec-10] c.csye7255.project.service.PlanService   : Validate JSON
+2020-04-10 00:11:17.517  INFO 22977 --- [http-nio-8080-exec-10] c.c.project.controller.PlanController    : PUT - Publishing data to Kafka: 
+2020-04-10 00:11:17.518  INFO 22977 --- [http-nio-8080-exec-10] c.c.project.controller.PlanController    : Data updated successfully
+2020-04-10 00:11:17.534  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Consumed Message Key: post
+2020-04-10 00:11:17.534  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Consumed Message Value: {
+    "planCostShares": {
+        "deductible": 4000,
+        "_org": "example.com",
+        "copay": 23,
+        "objectId": "1234vxc2324sdf-1",
+        "objectType": "membercostshare"
+    },
+    "linkedPlanServices": [
+        {
+            "linkedService": {
+                "name": "Yearly physical",
+                "_org": "example.com",
+                "objectId": "1234520xvc30asdf-508efg",
+                "objectType": "service"
+            },
+            "planserviceCostShares": {
+                "deductible": 10,
+                "_org": "example.com",
+                "copay": 0,
+                "objectId": "1234512xvc1314asdfs-503jfk",
+                "objectType": "membercostshare"
+            },
+            "_org": "example.com",
+            "objectId": "27283xvx9asdff-50445612",
+            "objectType": "planservice"
+        },
+        {
+            "linkedService": {
+                "name": "Yearly physical",
+                "_org": "example.com",
+                "objectId": "1234520xvc30asdf-4",
+                "objectType": "service"
+            },
+            "planserviceCostShares": {
+                "deductible": 10,
+                "_org": "example.com",
+                "copay": 0,
+                "objectId": "1234512xvc1314asdfs-2",
+                "objectType": "membercostshare"
+            },
+            "_org": "example.com",
+            "objectId": "27283xvx9asdff-7",
+            "objectType": "planservice"
+        },
+        {
+            "linkedService": {
+                "name": "well baby",
+                "_org": "example.com",
+                "objectId": "1234520xvc30sfs-5",
+                "objectType": "service"
+            },
+            "planserviceCostShares": {
+                "deductible": 10,
+                "_org": "example.com",
+                "copay": 175,
+                "objectId": "1234512xvc1314sdfsd-3",
+                "objectType": "membercostshare"
+            },
+            "_org": "example.com",
+            "objectId": "27283xvx9sdf-6",
+            "objectType": "planservice"
+        }
+    ],
+    "planType": "inNetworkType",
+    "_org": "example.com",
+    "creationDate": "12-12-2017",
+    "objectId": "mitali",
+    "objectType": "plan"
+}
+2020-04-10 00:11:17.535  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Saving data in ES
+2020-04-10 00:11:17.536  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Validating JSONschema
+2020-04-10 00:11:17.548  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.p.repo.ElasticSearchRepository       : Indexing document in ES:plan_mitali
+2020-04-10 00:11:35.847  INFO 22977 --- [http-nio-8080-exec-1] c.c.project.controller.PlanController    : GET mapping
+2020-04-10 00:11:35.852  INFO 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:11:35.853  INFO 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:11:35.853  INFO 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:11:35.853  INFO 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 00:17:07"}
+2020-04-10 00:11:35.854  INFO 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.PlanService   : Get Plan
+2020-04-10 00:11:35.854  INFO 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:11:35.854  INFO 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:11:35.854  INFO 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:11:35.855  INFO 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 00:17:07"}
+2020-04-10 00:11:35.861 ERROR 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:11:35.861 ERROR 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:11:35.863 ERROR 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:11:35.863 ERROR 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:11:35.865 ERROR 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:11:35.866 ERROR 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:11:35.868 ERROR 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:11:35.868 ERROR 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.PlanService   : Exeception while reading data: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2020-04-10 00:11:35.869 ERROR 22977 --- [http-nio-8080-exec-1] c.csye7255.project.service.PlanService   : Exeception while reading data: JSONObject["linkedPlanServices"] not a string.
+2020-04-10 00:11:35.869  INFO 22977 --- [http-nio-8080-exec-1] c.c.project.controller.PlanController    : Got data from Redis
+2020-04-10 00:20:31.738  INFO 22977 --- [http-nio-8080-exec-5] c.c.project.controller.PlanController    : GET mapping
+2020-04-10 00:20:31.740  INFO 22977 --- [http-nio-8080-exec-5] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:20:31.741  INFO 22977 --- [http-nio-8080-exec-5] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:20:31.741  INFO 22977 --- [http-nio-8080-exec-5] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSK2rGl/PXxOjQAk9sd8B8M340Owr9cqaoj0FYNqskPN2I=
+2020-04-10 00:20:31.743  INFO 22977 --- [http-nio-8080-exec-5] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 00:17:07"}
+2020-04-10 00:20:31.753  INFO 22977 --- [http-nio-8080-exec-5] c.csye7255.project.service.TokenService  : The Token Validity has expired
+2020-04-10 00:20:31.754 ERROR 22977 --- [http-nio-8080-exec-5] c.c.project.controller.PlanController    : BadRequest
+2020-04-10 00:20:50.664  INFO 22977 --- [http-nio-8080-exec-7] c.c.project.controller.PlanController    : GET mapping
+2020-04-10 00:20:50.664  INFO 22977 --- [http-nio-8080-exec-7] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:20:50.665  INFO 22977 --- [http-nio-8080-exec-7] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKzq1yGwMRo7TmI/c2w4BHzB++eY8IOVAP0MSQvZJ2YvI=
+2020-04-10 00:20:50.666  INFO 22977 --- [http-nio-8080-exec-7] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKzq1yGwMRo7TmI/c2w4BHzB++eY8IOVAP0MSQvZJ2YvI=
+2020-04-10 00:20:50.669  INFO 22977 --- [http-nio-8080-exec-7] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 01:11:04"}
+2020-04-10 00:20:50.670  INFO 22977 --- [http-nio-8080-exec-7] c.csye7255.project.service.PlanService   : Get Plan
+2020-04-10 00:20:50.671  INFO 22977 --- [http-nio-8080-exec-7] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:20:50.672  INFO 22977 --- [http-nio-8080-exec-7] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKzq1yGwMRo7TmI/c2w4BHzB++eY8IOVAP0MSQvZJ2YvI=
+2020-04-10 00:20:50.672  INFO 22977 --- [http-nio-8080-exec-7] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKzq1yGwMRo7TmI/c2w4BHzB++eY8IOVAP0MSQvZJ2YvI=
+2020-04-10 00:20:50.673  INFO 22977 --- [http-nio-8080-exec-7] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 01:11:04"}
+2020-04-10 00:20:50.674 ERROR 22977 --- [http-nio-8080-exec-7] c.c.project.controller.PlanController    : Notmodified
+2020-04-10 00:21:27.392  INFO 22977 --- [http-nio-8080-exec-9] c.c.project.controller.PlanController    : DELETE mapping
+2020-04-10 00:21:27.394  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 00:21:27.394  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKzq1yGwMRo7TmI/c2w4BHzB++eY8IOVAP0MSQvZJ2YvI=
+2020-04-10 00:21:27.395  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKzq1yGwMRo7TmI/c2w4BHzB++eY8IOVAP0MSQvZJ2YvI=
+2020-04-10 00:21:27.396  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 01:11:04"}
+2020-04-10 00:21:27.399  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Deleting data:{"planCostShares":"membercostshare_1234vxc2324sdf-1","linkedPlanServices":"[\"planservice_27283xvx9asdff-50445612\",\"planservice_27283xvx9asdff-7\",\"planservice_27283xvx9sdf-6\"]","planType":"inNetworkType","_org":"example.com","creationDate":"12-12-2017","objectId":"mitali","objectType":"plan"}
+2020-04-10 00:21:27.400  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Id: mitali
+2020-04-10 00:21:27.400  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Type: plan
+2020-04-10 00:21:27.401  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : {"deductible":4000,"_org":"example.com","copay":23,"objectId":"1234vxc2324sdf-1","objectType":"membercostshare"}
+2020-04-10 00:21:27.402  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Deleting data:{"deductible":4000,"_org":"example.com","copay":23,"objectId":"1234vxc2324sdf-1","objectType":"membercostshare"}
+2020-04-10 00:21:27.402  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Id: 1234vxc2324sdf-1
+2020-04-10 00:21:27.402  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Type: membercostshare
+2020-04-10 00:21:27.404  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Deleting data:{"linkedService":"service_1234520xvc30asdf-508efg","planserviceCostShares":"membercostshare_1234512xvc1314asdfs-503jfk","_org":"example.com","objectId":"27283xvx9asdff-50445612","objectType":"planservice"}
+2020-04-10 00:21:27.404  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Id: 27283xvx9asdff-50445612
+2020-04-10 00:21:27.405  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Type: planservice
+2020-04-10 00:21:27.406  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : {"name":"Yearly physical","_org":"example.com","objectId":"1234520xvc30asdf-508efg","objectType":"service"}
+2020-04-10 00:21:27.407  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Deleting data:{"name":"Yearly physical","_org":"example.com","objectId":"1234520xvc30asdf-508efg","objectType":"service"}
+2020-04-10 00:21:27.408  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Id: 1234520xvc30asdf-508efg
+2020-04-10 00:21:27.408  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Type: service
+2020-04-10 00:21:27.409  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : {"deductible":10,"_org":"example.com","copay":0,"objectId":"1234512xvc1314asdfs-503jfk","objectType":"membercostshare"}
+2020-04-10 00:21:27.410  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Deleting data:{"deductible":10,"_org":"example.com","copay":0,"objectId":"1234512xvc1314asdfs-503jfk","objectType":"membercostshare"}
+2020-04-10 00:21:27.410  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Id: 1234512xvc1314asdfs-503jfk
+2020-04-10 00:21:27.410  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Type: membercostshare
+2020-04-10 00:21:27.412  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Deleting data:{"linkedService":"service_1234520xvc30asdf-4","planserviceCostShares":"membercostshare_1234512xvc1314asdfs-2","_org":"example.com","objectId":"27283xvx9asdff-7","objectType":"planservice"}
+2020-04-10 00:21:27.412  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Id: 27283xvx9asdff-7
+2020-04-10 00:21:27.412  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Type: planservice
+2020-04-10 00:21:27.413  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : {"name":"Yearly physical","_org":"example.com","objectId":"1234520xvc30asdf-4","objectType":"service"}
+2020-04-10 00:21:27.414  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Deleting data:{"name":"Yearly physical","_org":"example.com","objectId":"1234520xvc30asdf-4","objectType":"service"}
+2020-04-10 00:21:27.414  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Id: 1234520xvc30asdf-4
+2020-04-10 00:21:27.414  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Type: service
+2020-04-10 00:21:27.416  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : {"deductible":10,"_org":"example.com","copay":0,"objectId":"1234512xvc1314asdfs-2","objectType":"membercostshare"}
+2020-04-10 00:21:27.416  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Deleting data:{"deductible":10,"_org":"example.com","copay":0,"objectId":"1234512xvc1314asdfs-2","objectType":"membercostshare"}
+2020-04-10 00:21:27.416  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Id: 1234512xvc1314asdfs-2
+2020-04-10 00:21:27.417  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Type: membercostshare
+2020-04-10 00:21:27.419  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Deleting data:{"linkedService":"service_1234520xvc30sfs-5","planserviceCostShares":"membercostshare_1234512xvc1314sdfsd-3","_org":"example.com","objectId":"27283xvx9sdf-6","objectType":"planservice"}
+2020-04-10 00:21:27.420  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Id: 27283xvx9sdf-6
+2020-04-10 00:21:27.420  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Type: planservice
+2020-04-10 00:21:27.421  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : {"name":"well baby","_org":"example.com","objectId":"1234520xvc30sfs-5","objectType":"service"}
+2020-04-10 00:21:27.421  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Deleting data:{"name":"well baby","_org":"example.com","objectId":"1234520xvc30sfs-5","objectType":"service"}
+2020-04-10 00:21:27.422  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Id: 1234520xvc30sfs-5
+2020-04-10 00:21:27.422  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Type: service
+2020-04-10 00:21:27.423  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : {"deductible":10,"_org":"example.com","copay":175,"objectId":"1234512xvc1314sdfsd-3","objectType":"membercostshare"}
+2020-04-10 00:21:27.424  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Deleting data:{"deductible":10,"_org":"example.com","copay":175,"objectId":"1234512xvc1314sdfsd-3","objectType":"membercostshare"}
+2020-04-10 00:21:27.424  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Id: 1234512xvc1314sdfsd-3
+2020-04-10 00:21:27.424  INFO 22977 --- [http-nio-8080-exec-9] c.csye7255.project.service.PlanService   : Type: membercostshare
+2020-04-10 00:21:27.428  INFO 22977 --- [http-nio-8080-exec-9] c.c.project.controller.PlanController    : Deleting plan from Kafka
+2020-04-10 00:21:27.429  INFO 22977 --- [http-nio-8080-exec-9] c.c.project.controller.PlanController    : Deleted plan successfully
+2020-04-10 00:21:27.441  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Consumed Message Key: delete
+2020-04-10 00:21:27.441  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Consumed Message Value: plan_mitali
+2020-04-10 00:21:27.441  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Deleting data from ES
+2020-04-10 00:21:27.444  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.p.repo.ElasticSearchRepository       : Deleting document in ES:plan_mitali
+2020-04-10 00:24:02.106  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.consumer.internals.Fetcher       : [Consumer clientId=consumer-1, groupId=group_id] Received unknown topic or partition error in fetch for partition kafkatopic-1
+2020-04-10 00:24:02.128  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Error while fetching metadata with correlation id 2149 : {kafkatopic=LEADER_NOT_AVAILABLE}
+2020-04-10 00:24:02.129  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Revoking previously assigned partitions [kafkatopic-0, kafkatopic-1]
+2020-04-10 00:24:02.130  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [kafkatopic-0, kafkatopic-1]
+2020-04-10 00:24:02.131  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 00:24:02.327  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Error while fetching metadata with correlation id 2151 : {kafkatopic=LEADER_NOT_AVAILABLE}
+2020-04-10 00:24:02.328  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] The following subscribed topics are not assigned to any members: [kafkatopic] 
+2020-04-10 00:24:02.334  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Successfully joined group with generation 2
+2020-04-10 00:24:02.334  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting newly assigned partitions: 
+2020-04-10 00:24:02.335  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: []
+2020-04-10 00:24:02.433  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Revoking previously assigned partitions []
+2020-04-10 00:24:02.433  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: []
+2020-04-10 00:24:02.433  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 00:24:02.438  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Successfully joined group with generation 3
+2020-04-10 00:24:02.439  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting newly assigned partitions: kafkatopic-0
+2020-04-10 00:24:02.441  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Found no committed offset for partition kafkatopic-0
+2020-04-10 00:24:02.443  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-1, groupId=group_id] Resetting offset for partition kafkatopic-0 to offset 0.
+2020-04-10 00:24:02.445  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkatopic-0]
+2020-04-10 00:24:13.168  INFO 22977 --- [kafka-coordinator-heartbeat-thread | group_id] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Group coordinator 10.0.0.98:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2020-04-10 00:24:13.174  INFO 22977 --- [kafka-coordinator-heartbeat-thread | group_id] o.a.kafka.clients.FetchSessionHandler    : [Consumer clientId=consumer-1, groupId=group_id] Error sending fetch request (sessionId=580096817, epoch=1847) to node 0: org.apache.kafka.common.errors.DisconnectException.
+2020-04-10 00:24:13.218  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:13.228  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:13.337  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:13.378  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:13.554  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:13.596  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:13.971  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:14.014  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:14.648  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:14.956  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:15.546  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:16.056  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:16.505  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:16.936  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:17.754  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:18.097  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:18.619  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:19.327  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:19.693  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:20.273  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:20.897  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:21.265  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:21.726  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:22.270  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:22.649  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:23.384  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:23.706  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:24.329  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:24.865  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:25.284  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:26.019  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:26.388  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:27.125  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:27.234  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:27.969  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:28.282  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:29.060  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:29.497  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:30.080  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:30.344  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:31.162  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:31.470  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:32.330  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:32.473  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:33.290  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:33.428  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:34.184  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:34.330  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:35.182  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:35.475  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:36.281  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:36.526  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:37.393  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:37.533  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:38.434  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:38.490  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:39.433  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:39.586  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:40.422  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:40.796  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:41.383  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:41.909  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:42.553  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:43.070  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:43.650  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:44.125  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:44.600  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:45.230  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:45.498  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:46.176  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:46.328  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:47.321  WARN 22977 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:47.376  WARN 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:48.313  WARN 22977 --- [kafka-coordinator-heartbeat-thread | group_id] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Connection to node 0 (/10.0.0.98:9092) could not be established. Broker may not be available.
+2020-04-10 00:24:48.314  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-1, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+2020-04-10 00:24:48.314  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-04-10 00:24:48.319  INFO 22977 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : group_id: Consumer stopped
+2020-04-10 00:24:48.324  INFO 22977 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-10 00:24:48.327  INFO 22977 --- [SpringContextShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2020-04-10 18:20:55.514  INFO 24895 --- [main] com.csye7255.project.ProjectApplication  : Starting ProjectApplication on Mitalis-MacBook-Air.local with PID 24895 (/Users/mitalisalvi/Downloads/BDI/Final/project/target/classes started by mitalisalvi in /Users/mitalisalvi/Downloads/BDI/Final/project)
+2020-04-10 18:20:55.532  INFO 24895 --- [main] com.csye7255.project.ProjectApplication  : No active profile set, falling back to default profiles: default
+2020-04-10 18:20:59.778  INFO 24895 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-10 18:20:59.818  INFO 24895 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-10 18:20:59.819  INFO 24895 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-10 18:21:00.114  INFO 24895 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-10 18:21:00.116  INFO 24895 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4431 ms
+2020-04-10 18:21:00.870  INFO 24895 --- [main] c.c.project.config.ElasticSearchConfig   : Creating RestHighLevel client: 
+2020-04-10 18:21:03.531  INFO 24895 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-10 18:21:04.131  INFO 24895 --- [main] c.c.project.config.ElasticSearchConfig   : Creating RestHighLevel client: 
+2020-04-10 18:21:04.480  INFO 24895 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2020-04-10 18:21:04.710  INFO 24895 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-04-10 18:21:04.717  INFO 24895 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-04-10 18:21:04.718  INFO 24895 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1586557264703
+2020-04-10 18:21:05.350  INFO 24895 --- [main] o.springframework.kafka.core.KafkaAdmin  : Topic 'kafkatopic' exists but has a different partition count: 1 not 2, increasing if the broker supports it
+2020-04-10 18:21:05.684  INFO 24895 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2020-04-10 18:21:05.774  INFO 24895 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-04-10 18:21:05.774  INFO 24895 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-04-10 18:21:05.774  INFO 24895 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1586557265774
+2020-04-10 18:21:05.777  INFO 24895 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-1, groupId=group_id] Subscribed to topic(s): kafkatopic
+2020-04-10 18:21:05.781  INFO 24895 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-04-10 18:21:05.841  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-1, groupId=group_id] Cluster ID: kLiN4XzQROSmyeF4oyfF6g
+2020-04-10 18:21:05.846  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Discovered group coordinator 10.0.0.98:9092 (id: 2147483647 rack: null)
+2020-04-10 18:21:05.860  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Revoking previously assigned partitions []
+2020-04-10 18:21:05.861  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: []
+2020-04-10 18:21:05.861  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 18:21:05.952  INFO 24895 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-10 18:21:05.954  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 18:21:05.964  INFO 24895 --- [main] com.csye7255.project.ProjectApplication  : Started ProjectApplication in 12.38 seconds (JVM running for 13.586)
+2020-04-10 18:21:06.003  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Successfully joined group with generation 5
+2020-04-10 18:21:06.009  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting newly assigned partitions: kafkatopic-0, kafkatopic-1
+2020-04-10 18:21:06.032  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Found no committed offset for partition kafkatopic-1
+2020-04-10 18:21:06.034  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting offset for partition kafkatopic-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=10.0.0.98:9092 (id: 0 rack: null), epoch=0}}
+2020-04-10 18:21:06.073  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-1, groupId=group_id] Resetting offset for partition kafkatopic-1 to offset 0.
+2020-04-10 18:21:06.097  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkatopic-0, kafkatopic-1]
+2020-04-10 18:21:18.287  INFO 24895 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-10 18:21:18.290  INFO 24895 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-10 18:21:18.330  INFO 24895 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 40 ms
+2020-04-10 18:21:18.425  INFO 24895 --- [http-nio-8080-exec-2] c.c.project.controller.TokenController   : GET token
+2020-04-10 18:21:18.436  INFO 24895 --- [http-nio-8080-exec-2] c.c.project.controller.TokenController   : Token values is {"organization":"example.com","user":"user","ttl":"2020/04/10 19:21:18"}
+2020-04-10 18:21:18.437  INFO 24895 --- [http-nio-8080-exec-2] c.c.project.controller.TokenController   : TTL is : 2020/04/10 19:21:18
+2020-04-10 18:21:59.631  INFO 24895 --- [http-nio-8080-exec-3] c.c.project.controller.PlanController    : POST mapping
+2020-04-10 18:21:59.634  INFO 24895 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 18:21:59.634  INFO 24895 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKSI17ho7Vj6uM7OM14qNpbd2QKlqf+tF60CQvMhhsy3I=
+2020-04-10 18:21:59.634  INFO 24895 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKSI17ho7Vj6uM7OM14qNpbd2QKlqf+tF60CQvMhhsy3I=
+2020-04-10 18:21:59.646  INFO 24895 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 19:21:18"}
+2020-04-10 18:21:59.653  INFO 24895 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Create plan:{}
+2020-04-10 18:21:59.654  INFO 24895 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : Validate Token
+2020-04-10 18:21:59.654  INFO 24895 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : token value is AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKSI17ho7Vj6uM7OM14qNpbd2QKlqf+tF60CQvMhhsy3I=
+2020-04-10 18:21:59.655  INFO 24895 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : Authorize Token:AoLPptH62/mnhKM7uUxsh/tBY88dlDrQ2W2qT6VcdfaSnKthe1FPP1slwZjh2HSKSI17ho7Vj6uM7OM14qNpbd2QKlqf+tF60CQvMhhsy3I=
+2020-04-10 18:21:59.656  INFO 24895 --- [http-nio-8080-exec-3] c.csye7255.project.service.TokenService  : Entity Decoded is {"organization":"example.com","user":"user","ttl":"2020/04/10 19:21:18"}
+2020-04-10 18:21:59.661  INFO 24895 --- [http-nio-8080-exec-3] c.csye7255.project.service.PlanService   : Validate JSON
+2020-04-10 18:21:59.871  INFO 24895 --- [http-nio-8080-exec-3] c.c.project.controller.PlanController    : Etag: a14fb65c-4bd4-4f06-b1e5-9c51870c1534
+2020-04-10 18:21:59.871  INFO 24895 --- [http-nio-8080-exec-3] c.c.project.controller.PlanController    : POST - Publishing to KAFKA
+2020-04-10 18:21:59.902  INFO 24895 --- [http-nio-8080-exec-3] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2020-04-10 18:21:59.989  INFO 24895 --- [http-nio-8080-exec-3] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 2.3.1
+2020-04-10 18:21:59.990  INFO 24895 --- [http-nio-8080-exec-3] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 18a913733fb71c01
+2020-04-10 18:21:59.991  INFO 24895 --- [http-nio-8080-exec-3] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1586557319989
+2020-04-10 18:22:00.014  INFO 24895 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: kLiN4XzQROSmyeF4oyfF6g
+2020-04-10 18:22:00.068  INFO 24895 --- [http-nio-8080-exec-3] c.c.project.controller.PlanController    : Data saved successfully
+2020-04-10 18:22:00.152  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Consumed Message Key: post
+2020-04-10 18:22:00.152  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Consumed Message Value: {
+
+	"planCostShares": {
+		"deductible": 2000,
+		"_org": "example.com",
+		"copay": 23,
+		"objectId": "1234vxc2324sdf-1",
+		"objectType": "membercostshare"
+		
+	},
+	"linkedPlanServices": [{
+		"linkedService": {
+			"_org": "example.com",
+			"objectId": "1234520xvc30asdf-4",
+			"objectType": "service",
+			"name": "Yearly physical"
+		},
+		"planserviceCostShares": {
+			"deductible": 10,
+			"_org": "example.com",
+			"copay": 0,
+			"objectId": "1234512xvc1314asdfs-2",
+			"objectType": "membercostshare"
+		},
+		"_org": "example.com",
+		"objectId": "27283xvx9asdff-7",
+		"objectType": "planservice"
+	}, {
+		"linkedService": {
+			"_org": "example.com",
+			"objectId": "1234520xvc30sfs-5",
+			"objectType": "service",
+			"name": "well baby"
+		},
+		"planserviceCostShares": {
+			"deductible": 10,
+			"_org": "example.com",
+			"copay": 175,
+			"objectId": "1234512xvc1314sdfsd-3",
+			"objectType": "membercostshare"
+		},
+		
+		"_org": "example.com",
+		
+		"objectId": "27283xvx9sdf-6",
+		"objectType": "planservice"
+	}],
+
+
+	"_org": "example.com",
+	"objectId": "mitali",
+	"objectType": "plan",
+	"planType": "inNetworkType",
+	"creationDate": "12-12-2017"
+}
+2020-04-10 18:22:00.152  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Saving data in ES
+2020-04-10 18:22:00.153  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.csye7255.project.service.KafkaService  : Validating JSONschema
+2020-04-10 18:22:00.183  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.c.p.repo.ElasticSearchRepository       : Indexing document in ES:plan_mitali
+2020-04-10 18:43:03.848  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.consumer.internals.Fetcher       : [Consumer clientId=consumer-1, groupId=group_id] Received unknown topic or partition error in fetch for partition kafkatopic-1
+2020-04-10 18:43:03.864  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Error while fetching metadata with correlation id 3072 : {kafkatopic=LEADER_NOT_AVAILABLE}
+2020-04-10 18:43:03.865  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Revoking previously assigned partitions [kafkatopic-0, kafkatopic-1]
+2020-04-10 18:43:03.866  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [kafkatopic-0, kafkatopic-1]
+2020-04-10 18:43:03.866  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 18:43:04.074  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Error while fetching metadata with correlation id 3074 : {kafkatopic=LEADER_NOT_AVAILABLE}
+2020-04-10 18:43:04.075  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] The following subscribed topics are not assigned to any members: [kafkatopic] 
+2020-04-10 18:43:04.079  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Successfully joined group with generation 6
+2020-04-10 18:43:04.080  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting newly assigned partitions: 
+2020-04-10 18:43:04.081  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: []
+2020-04-10 18:43:04.176  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Revoking previously assigned partitions []
+2020-04-10 18:43:04.176  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: []
+2020-04-10 18:43:04.176  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 18:43:04.204  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Successfully joined group with generation 7
+2020-04-10 18:43:04.205  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting newly assigned partitions: kafkatopic-0
+2020-04-10 18:43:04.208  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Found no committed offset for partition kafkatopic-0
+2020-04-10 18:43:04.212  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-1, groupId=group_id] Resetting offset for partition kafkatopic-0 to offset 0.
+2020-04-10 18:43:04.215  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkatopic-0]
+2020-04-10 18:43:18.681  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.consumer.internals.Fetcher       : [Consumer clientId=consumer-1, groupId=group_id] Received unknown topic or partition error in fetch for partition kafkatopic-0
+2020-04-10 18:43:18.692  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Error while fetching metadata with correlation id 3116 : {kafkatopic=LEADER_NOT_AVAILABLE}
+2020-04-10 18:43:18.692  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Revoking previously assigned partitions [kafkatopic-0]
+2020-04-10 18:43:18.693  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [kafkatopic-0]
+2020-04-10 18:43:18.693  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 18:43:18.860  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Error while fetching metadata with correlation id 3118 : {kafkatopic=LEADER_NOT_AVAILABLE}
+2020-04-10 18:43:18.861  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] The following subscribed topics are not assigned to any members: [kafkatopic] 
+2020-04-10 18:43:18.867  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Successfully joined group with generation 8
+2020-04-10 18:43:18.875  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting newly assigned partitions: 
+2020-04-10 18:43:18.875  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: []
+2020-04-10 18:43:18.964  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Revoking previously assigned partitions []
+2020-04-10 18:43:18.965  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: []
+2020-04-10 18:43:18.965  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 18:43:18.980  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Successfully joined group with generation 9
+2020-04-10 18:43:18.980  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting newly assigned partitions: kafkatopic-0
+2020-04-10 18:43:18.983  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Found no committed offset for partition kafkatopic-0
+2020-04-10 18:43:18.985  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-1, groupId=group_id] Resetting offset for partition kafkatopic-0 to offset 0.
+2020-04-10 18:43:18.989  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkatopic-0]
+2020-04-10 18:44:10.558  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.consumer.internals.Fetcher       : [Consumer clientId=consumer-1, groupId=group_id] Received unknown topic or partition error in fetch for partition kafkatopic-0
+2020-04-10 18:44:10.568  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Error while fetching metadata with correlation id 3247 : {kafkatopic=LEADER_NOT_AVAILABLE}
+2020-04-10 18:44:10.569  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Revoking previously assigned partitions [kafkatopic-0]
+2020-04-10 18:44:10.570  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [kafkatopic-0]
+2020-04-10 18:44:10.570  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 18:44:10.746  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Error while fetching metadata with correlation id 3249 : {kafkatopic=LEADER_NOT_AVAILABLE}
+2020-04-10 18:44:10.755  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] The following subscribed topics are not assigned to any members: [kafkatopic] 
+2020-04-10 18:44:10.758  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Successfully joined group with generation 10
+2020-04-10 18:44:10.758  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting newly assigned partitions: 
+2020-04-10 18:44:10.768  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: []
+2020-04-10 18:44:10.853  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Revoking previously assigned partitions []
+2020-04-10 18:44:10.854  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: []
+2020-04-10 18:44:10.854  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 18:44:10.863  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Successfully joined group with generation 11
+2020-04-10 18:44:10.864  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting newly assigned partitions: kafkatopic-0
+2020-04-10 18:44:10.867  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Found no committed offset for partition kafkatopic-0
+2020-04-10 18:44:10.868  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-1, groupId=group_id] Resetting offset for partition kafkatopic-0 to offset 0.
+2020-04-10 18:44:10.871  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkatopic-0]
+2020-04-10 18:44:26.972  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.consumer.internals.Fetcher       : [Consumer clientId=consumer-1, groupId=group_id] Received unknown topic or partition error in fetch for partition kafkatopic-0
+2020-04-10 18:44:26.989  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Error while fetching metadata with correlation id 3296 : {kafkatopic=LEADER_NOT_AVAILABLE}
+2020-04-10 18:44:26.989  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Revoking previously assigned partitions [kafkatopic-0]
+2020-04-10 18:44:26.990  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: [kafkatopic-0]
+2020-04-10 18:44:26.990  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 18:44:27.163  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-1, groupId=group_id] Error while fetching metadata with correlation id 3298 : {kafkatopic=LEADER_NOT_AVAILABLE}
+2020-04-10 18:44:27.164  WARN 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] The following subscribed topics are not assigned to any members: [kafkatopic] 
+2020-04-10 18:44:27.168  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Successfully joined group with generation 12
+2020-04-10 18:44:27.177  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting newly assigned partitions: 
+2020-04-10 18:44:27.178  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: []
+2020-04-10 18:44:27.268  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Revoking previously assigned partitions []
+2020-04-10 18:44:27.269  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions revoked: []
+2020-04-10 18:44:27.269  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] (Re-)joining group
+2020-04-10 18:44:27.278  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Successfully joined group with generation 13
+2020-04-10 18:44:27.278  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Setting newly assigned partitions: kafkatopic-0
+2020-04-10 18:44:27.280  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Found no committed offset for partition kafkatopic-0
+2020-04-10 18:44:27.282  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-1, groupId=group_id] Resetting offset for partition kafkatopic-0 to offset 0.
+2020-04-10 18:44:27.285  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : group_id: partitions assigned: [kafkatopic-0]
+2020-04-10 18:45:11.429  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=group_id] Member consumer-1-bc78bd66-50e4-4116-819d-ba8316c640f7 sending LeaveGroup request to coordinator 10.0.0.98:9092 (id: 2147483647 rack: null)
+2020-04-10 18:45:11.430  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-1, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+2020-04-10 18:45:11.432  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2020-04-10 18:45:11.446  INFO 24895 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : group_id: Consumer stopped
+2020-04-10 18:45:11.451  INFO 24895 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-10 18:45:11.454  INFO 24895 --- [SpringContextShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.

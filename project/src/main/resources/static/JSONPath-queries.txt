@@ -1,0 +1,9 @@
+$.linkedPlanServices[-1:]
+
+$.[planType]
+
+$.linkedPlanServices[?(@.objectId=='27283xvx9sdf-507')].linkedService.name
+
+$.linkedPlanServices[1].planserviceCostShares._org
+
+$.linkedPlanServices..copay

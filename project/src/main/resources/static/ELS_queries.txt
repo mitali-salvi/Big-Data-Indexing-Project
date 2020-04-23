@@ -1,0 +1,140 @@
+GET /plan/_search
+{
+  "query": {
+    "match":{
+      "_id":"plan_mitali"
+    }
+  }
+}
+
+GET /plan/_search
+{
+  "query": {
+   "query_string": {
+     "fields": ["planCostShares.deductible"],
+     "query": "2000",
+     "default_operator": "AND"
+    }
+  }
+}
+
+
+GET /plan/_search
+{
+  "query": {
+   "query_string": {
+     "fields": ["objectId"],
+     "query": "mitali",
+     "default_operator": "AND"
+    }
+  }  
+}
+
+GET /_search
+{
+    "query": {
+        "range" : {
+            "planCostShares.deductible" : {
+                "gte" : 1000,
+                "lte" : 5000
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+GET plan/_search
+{
+  "query":{
+    "nested": {
+        "path": "linkedPlanServices.linkedService",
+        "query" : {
+                "bool" : {
+                    "must" : [
+                    { "match" : {"linkedPlanServices.linkedService._org": "example.com"} },
+                    { "match" : {"linkedPlanServices.linkedService.name": "Yearly Physical"} }
+                    ]
+                }
+            }
+    }
+  }
+}
+
+
+POST /plan/_delete_by_query
+{
+  "query": {
+   "query_string": {
+     "fields": ["objectId"],
+     "query": "mitali",
+     "default_operator": "AND"
+    }
+  } 
+}
+
+
+
+
+
+
+
+
+
+PUT /plan/_doc/plan_mitali
+{
+    "planCostShares": {
+        "deductible": 4000,
+        "_org": "example.com",
+        "copay": 23,
+        "objectId": "1234vxc2324sdf-1",
+        "objectType": "membercostshare"
+    },
+    "linkedPlanServices": [
+        {
+            "linkedService": {
+                "name": "Yearly physical",
+                "_org": "example.com",
+                "objectId": "1234520xvc30asdf-4",
+                "objectType": "service"
+            },
+            "planserviceCostShares": {
+                "deductible": 10,
+                "_org": "example.com",
+                "copay": 0,
+                "objectId": "1234512xvc1314asdfs-2",
+                "objectType": "membercostshare"
+            },
+            "_org": "example.com",
+            "objectId": "27283xvx9asdff-7",
+            "objectType": "planservice"
+        },
+        {
+            "linkedService": {
+                "name": "well baby",
+                "_org": "example.com",
+                "objectId": "1234520xvc30sfs-5",
+                "objectType": "service"
+            },
+            "planserviceCostShares": {
+                "deductible": 10,
+                "_org": "example.com",
+                "copay": 175,
+                "objectId": "1234512xvc1314sdfsd-3",
+                "objectType": "membercostshare"
+            },
+            "_org": "example.com",
+            "objectId": "27283xvx9sdf-6",
+            "objectType": "planservice"
+        }
+    ],
+    "planType": "inNetworkType",
+    "_org": "example.com",
+    "creationDate": "12-12-2017",
+    "objectId": "mitali",
+    "objectType": "plan"
+}
